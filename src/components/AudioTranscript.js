@@ -176,13 +176,13 @@ const AudioTranscript = ({ tasks, userDetail, language, userHistory }) => {
                 )}
               </p>
             </div>
-            <div className="border rounded-md shadow-sm shadow-gray-400 w-11/12 md:w-3/4 p-6 md:p-8 mt-4 md:mt-10">
+            <div className="border rounded-md shadow-sm shadow-gray-400 w-11/12 md:w-3/4 p-6 md:p-8 mt-4 md:mt-10 bg-base-100">
               <div className="flex flex-col gap-5 justify-center items-center">
                 <AudioPlayer tasks={taskList} audioRef={audioRef} />
                 <textarea
                   value={transcript || ""}
                   onChange={(e) => setTranscript(e.target.value)}
-                  className="rounded-md p-4 border border-slate-400 w-full text-xl"
+                  className="rounded-md p-4 border border-slate-400 w-full text-xl bg-base-100 text-base-content"
                   placeholder="Type here..."
                   rows={6}
                   id="transcript"

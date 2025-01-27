@@ -4,6 +4,33 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed&display=swap");
 
+@font-face {
+    font-family: "Monlam";
+    src: url("/font/MonlamTBslim.woff2") format("woff2"),
+        url("/font/MonlamTBslim.woff") format("woff"),
+        url("/font/MonlamTBslim.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-    font-family: "Lato", "Trebuchet MS", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Monlam", "Lato", "Trebuchet MS", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+
+    [data-theme="light"] textarea,
+    [data-theme="light"] select,
+    [data-theme="light"] input {
+        background-color: white;
+        color: black;
+    }
+
+    [data-theme="dark"] textarea,
+    [data-theme="dark"] select,
+    [data-theme="dark"] input {
+        background-color: #374151;
+        color: white;
+    }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import AppContext from "./AppContext";
 import { useContext } from "react";
 import LanguageToggle from "./LanguageToggle";
+import ThemeToggle from "./ThemeToggle";
 import { BsCheckLg, BsTrash } from "react-icons/bs";
 import { getTaskWithRevertedState } from "@/model/task";
 
@@ -56,7 +57,7 @@ const Sidebar = ({
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-          <div className="flex flex-col w-80 min-h-full h-full bg-[#54606e] text-white">
+          <div className="flex flex-col w-80 min-h-full h-full bg-base-200 text-base-content">
             <section className="px-5 pt-5 pb-2 mb-2 border-b border-b-[#384451]">
               <h3 className="uppercase font-bold mb-2">{lang.project}</h3>
               <div className="flex text-right justify-between">
@@ -143,8 +144,12 @@ const Sidebar = ({
               <h3 className="uppercase font-bold">{lang.language}</h3>
               <LanguageToggle />
             </section>
-            <section className="px-5 pb-5 mb-5 border-b border-b-[#384451] overflow-y-auto flex-1">
-              <h3 className="uppercase font-bold pb-2 top-0 sticky bg-[#54606e]">
+            <section className="flex gap-4 align-middle px-5 pb-2 mb-2 border-b border-b-[#384451]">
+              <h3 className="uppercase font-bold">{lang.theme}</h3>
+              <ThemeToggle />
+            </section>
+            <section className="px-5 pb-5 mb-5 pt-1 border-b border-b-[#384451] overflow-y-auto flex-1">
+              <h3 className="uppercase font-bold pb-2 top-0 sticky">
                 {lang.history}
               </h3>
               {userHistory.map((task) => (

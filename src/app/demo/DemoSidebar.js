@@ -57,8 +57,8 @@ const DemoSidebar = ({
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-          <div className="flex flex-col w-80 min-h-full h-full bg-[#54606e] text-white">
-            <header className="bg-[#384451] p-4 mb-5">
+          <div className="flex flex-col w-80 min-h-full h-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white">
+            <header className="bg-gray-200 dark:bg-gray-700 p-4 mb-5">
               <div className="text-lg">{lang.title}</div>
             </header>
             <section className="px-5 pb-5 mb-5 border-b border-b-[#384451]">
@@ -151,7 +151,7 @@ const DemoSidebar = ({
               <LanguageToggle />
             </section>
             <section className="px-5 pb-5 mb-5 border-b border-b-[#384451] overflow-y-auto flex-1">
-              <h3 className="uppercase font-bold pb-2 top-0 sticky bg-[#54606e]">
+              <h3 className="uppercase font-bold pb-2 top-0 sticky bg-base-100">
                 {lang.history}
               </h3>
               {userHistory

@@ -21,6 +21,7 @@
       file: "File",
       speed: "Speed",
       language: "Language",
+      theme: "Theme",
       history: "History",
     },
     bo: {
@@ -45,6 +46,7 @@
         file: "ཡིག་ཆ།",
         speed: "མྱུར་ཚད།",
         language: "སྐད་ཡིག།",
+        theme: "རྣམ་པ།",
         history: "མིག་སྔའི་ལས་བསྡོམས།",
     },
   };

@@ -45,7 +45,7 @@ const ActionButtons = ({ updateTaskAndIndex, tasks, transcript, role }) => {
             className="focus:outline-none text-white bg-[#4fd364] font-medium text-md p-4 sm:p-9"
             onClick={() => updateTaskAndIndex("submit", transcript, tasks[0])}
           >
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center gap-1">
               <BsCheckLg width="5rem" />
               <p>{lang.submit}</p>
             </div>
@@ -59,7 +59,7 @@ const ActionButtons = ({ updateTaskAndIndex, tasks, transcript, role }) => {
               className="focus:outline-none text-white bg-[#f74c4a] font-medium text-md p-4 sm:p-9"
               onClick={() => updateTaskAndIndex("reject", transcript, tasks[0])}
             >
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center gap-1">
                 <BsXLg />
                 <p>{lang.reject}</p>
               </div>
@@ -73,7 +73,7 @@ const ActionButtons = ({ updateTaskAndIndex, tasks, transcript, role }) => {
             className="focus:outline-none text-white bg-yellow-500 font-medium text-md p-4 sm:p-9"
             onClick={() => updateTaskAndIndex("save", transcript, tasks[0])}
           >
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center gap-1">
               <BsArrowReturnLeft />
               <p>{lang.save}</p>
             </div>
@@ -86,7 +86,7 @@ const ActionButtons = ({ updateTaskAndIndex, tasks, transcript, role }) => {
             className="focus:outline-none text-white bg-[#b9b9b9] font-medium text-md p-4 sm:p-9"
             onClick={() => updateTaskAndIndex("trash", transcript, tasks[0])}
           >
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center gap-1">
               <BsTrash />
               <p>{lang.trash}</p>
             </div>

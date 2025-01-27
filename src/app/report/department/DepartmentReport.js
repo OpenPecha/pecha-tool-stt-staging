@@ -101,7 +101,7 @@ const DepartmentReport = ({ departments }) => {
 
   return (
     <>
-      <form className="sticky top-0 z-20 py-8 bg-white dark:bg-gray-800 flex flex-col md:flex-row justify-around items-center md:items-end space-y-5 space-x-0 md:space-y-0 md:space-x-10">
+      <form className="sticky top-0 z-20 py-8 bg-base-100 flex flex-col md:flex-row justify-around items-center md:items-end space-y-5 space-x-0 md:space-y-0 md:space-x-10">
         <Select
           title="department_id"
           label="department"
